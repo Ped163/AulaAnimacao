@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+}
+
+/*Animação*/
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 6px solid #1e293b;
+    border-top-color: #00cc8f;
+    border-radius: 50%;
+
+    animation: girar 0.0009s ease infinite;
+}
